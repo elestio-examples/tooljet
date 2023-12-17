@@ -10,6 +10,14 @@ Deploy ToolJet Search server with CI/CD on Elestio
 
 # Once deployed ...
 
-    https://[CI_CD_DOMAIN]
+You can open ToolJet web UI here:
+
+    https://[CI_CD_DOMAIN]/
+    Login: [ADMIN_EMAIL]
+    password: [ADMIN_PASSWORD]
+
+You can open pgAdmin web UI here:
+
+    https://[CI_CD_DOMAIN]:1555
     Login: [ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]

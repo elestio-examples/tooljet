@@ -7,6 +7,20 @@ ports:
     public: true
     path: "/"
     isAuth: false
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "1555"
+    targetPort: "2019"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: false
+  - protocol: "TCP"
+    targetProtocol: "TCP"
+    listeningPort: "58973"
+    targetIP: "172.17.0.1"
+    targetPort: "39393"
+    public: true
 environments:
   - key: "SOFTWARE_VERSION_TAG"
     value: "latest"
@@ -83,3 +97,12 @@ lifeCycleConfig:
   postBackupCommand: "./scripts/postBackup.sh"
   preRestoreCommand: "./scripts/preRestore.sh"
   postRestoreCommand: "./scripts/postRestore.sh"
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "ToolJet"
+    login: "[ADMIN_EMAIL]"
+    password: "[ADMIN_PASSWORD]"
+  - url: "https://[CI_CD_DOMAIN]:1555"
+    label: "PG Admin"
+    login: "[ADMIN_EMAIL]"
+    password: "[ADMIN_PASSWORD]"
