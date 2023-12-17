@@ -17,3 +17,10 @@ cat <<EOT > ./servers.json
     }
 }
 EOT
+
+PGRST_JWT_SECRET=${PGRST_JWT_SECRET:-`openssl rand -hex 32`}
+
+cat << EOT >> ./.env
+
+PGRST_JWT_SECRET=${PGRST_JWT_SECRET}
+EOT

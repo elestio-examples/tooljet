@@ -62,8 +62,6 @@ environments:
     value: "postgrest"
   - key: "PGRST_DB_URI"
     value: "postgres://postgres:random_password@postgres:5432/tooljet"
-  - key: "PGRST_JWT_SECRET"
-    value: "random_password"
   - key: "CHECK_FOR_UPDATES"
     value: "true"
   - key: "DISABLE_TOOLJET_TELEMETRY"
