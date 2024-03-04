@@ -29,7 +29,7 @@ services:
       - 172.17.0.1:39393:5432
 
   postgrest:
-    image: postgrest/postgrest:v10.1.1.20221215
+    image: postgrest/postgrest
     restart: always
     depends_on:
       - postgres
