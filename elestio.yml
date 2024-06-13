@@ -78,6 +78,14 @@ environments:
     value: "2880"
   - key: "DEPLOYMENT_PLATFORM"
     value: "docker"
+  - key: "REDIS_HOST"
+    value: "redis"
+  - key: "REDIS_PORT"
+    value: "6379"
+  - key: "REDIS_USER"
+    value: "root"
+  - key: "REDIS_PASSWORD"
+    value: "random_password"
 
 config:
   runTime: "dockerCompose"
