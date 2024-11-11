@@ -37,7 +37,7 @@ environments:
   - key: "ORM_LOGGING"
     value: "all"
   - key: "PG_DB"
-    value: "tooljet"
+    value: "tooljet_app"
   - key: "PG_USER"
     value: "postgres"
   - key: "PG_HOST"
