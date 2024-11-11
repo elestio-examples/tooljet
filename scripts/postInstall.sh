@@ -14,5 +14,5 @@ curl http://${target}/api/setup-admin \
   -H 'content-type: application/json' \
   -H 'pragma: no-cache' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' \
-  --data-raw '{"companyName":"admin","companySize":"1-10","role":"Other","name":"admin","workspace":"admin","email":"'${ADMIN_EMAIL}'","password":"'${ADMIN_PASSWORD}'"}' \
+  --data-raw '{"companyName":"admin","companySize":"1-10","role":"Other","name":"admin","workspaceName":"admin","email":"'${ADMIN_EMAIL}'","password":"'${ADMIN_PASSWORD}'"}' \
   --compressed
